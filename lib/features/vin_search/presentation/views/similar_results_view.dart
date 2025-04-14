@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 /// is not found for the VIN search and server returned similar vehicles.
 class SimilarResultsView extends StatelessWidget {
   const SimilarResultsView._({
-    super.key,
+    Key? key,
     required this.similarVehicles,
-  });
+  }) : super(key: key);
 
   static const String routeName = 'similar-results';
 

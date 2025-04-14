@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 /// A view for displaying auction data and a customer feedback.
 class AuctionView extends StatelessWidget {
   const AuctionView._({
-    super.key,
+    Key? key,
     required this.auctionData,
-  });
+  }) : super(key: key);
 
   static const String routeName = 'auction-view';
 
